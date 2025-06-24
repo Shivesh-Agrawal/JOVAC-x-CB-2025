@@ -1,0 +1,20 @@
+const triplealpha = function (alpha){
+   return alpha*3;
+}
+const squarebeta = function (beta){
+    return beta*beta;
+}
+
+
+const calculate =function (alpha,logic){
+    let output =[];
+    for (let i=0;i<alpha.length;i++){
+        output.push(logic(alpha[i]));
+    }
+    return output;
+}
+const alpha1 = [3,5,7,9,11]
+const beta = [3,5,7,9,11]
+
+console.log(calculate(alpha1,triplealpha));
+console.log(calculate(beta,squarebeta));
